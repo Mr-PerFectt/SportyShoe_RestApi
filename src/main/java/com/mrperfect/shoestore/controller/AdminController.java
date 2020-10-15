@@ -120,6 +120,9 @@ public class AdminController {
 //		
 //	}
 		
+		
+		//Search Filter By Category
+	
 		@PostMapping("/report/{filterByCategory}")
 		public List <CheckoutCart> purchaseReportByCategoy(@PathVariable(value="filterByCategory") String filterBy, @RequestBody CheckoutCart checkoutCart) {
 		if(filterBy != null && filterBy.equals("category")) {
